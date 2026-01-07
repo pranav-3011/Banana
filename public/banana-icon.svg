@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bananaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4A300;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M30 20 Q 20 30, 25 50 Q 30 70, 40 85 Q 50 90, 60 85 Q 70 70, 68 50 Q 65 30, 55 20 Q 50 15, 45 17 Q 40 15, 35 17 Q 32 18, 30 20 Z" 
+        fill="url(#bananaGradient)" 
+        stroke="#E09000" 
+        stroke-width="2"/>
+  <ellipse cx="45" cy="25" rx="3" ry="6" fill="#8B5A00" opacity="0.3"/>
+  <path d="M 45 18 Q 48 12, 45 8" stroke="#6B8E23" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
+
+
