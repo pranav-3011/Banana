@@ -35,11 +35,11 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold text-white">GS Agritech</h3>
-                <p className="text-xs text-gray-400">Premium Banana Exporter</p>
+                <p className="text-xs text-gray-400">Premium Cavendish G9 Banana Exporter</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Leading banana export company specializing in premium Cavendish
+              Leading banana export company specializing exclusively in premium Cavendish G9
               bananas. Quality, reliability, and excellence in every shipment to
               50+ countries worldwide.
             </p>
@@ -111,7 +111,7 @@ const Footer = () => {
                 Banana Export Services
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Premium Bananas
+                Cavendish G9 Bananas
               </li>
               <li className="hover:text-primary-500 transition-colors">
                 Quality Assurance

@@ -52,10 +52,10 @@ const Contact = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Let's Start Your{" "}
-            <span className="text-primary-600">Import Journey</span>
+            <span className="text-primary-600">Cavendish G9 Import Journey</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Fill out the form below and our team will get back to you within 24
+            Ready to import premium Cavendish G9 bananas? Fill out the form below and our team will get back to you within 24
             hours.
           </p>
         </motion.div>

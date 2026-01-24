@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import bananaicon from "../../Assets/banana_logo.png";
 
 const CTASection = () => {
@@ -30,36 +31,30 @@ const CTASection = () => {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
             Ready to Import Premium
             <span className="block text-transparent bg-clip-text bg-gradient-to-r mt-2 from-primary-400 to-secondary-400">
-              Premium Bananas?
+              Cavendish G9 Bananas?
             </span>
           </h2>
 
           <p className="text-lg md:text-xl mb-10 text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Join hundreds of satisfied clients worldwide. With bananas as our
-            flagship product, we're ready to serve all your banana import
+            Join hundreds of satisfied clients worldwide. With Cavendish G9 bananas as our
+            exclusive product, we're ready to serve all your banana import
             requirements with the same excellence.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              onClick={() => {
-                const element = document.getElementById("contact");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
+            <Link
+              to="/contact"
               className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
               Get Started Now
-            </button>
-            <button
-              onClick={() => {
-                const element = document.getElementById("export-process");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
+            </Link>
+            <Link
+              to="/export-process"
               className="bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
             >
               Learn Our Process
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

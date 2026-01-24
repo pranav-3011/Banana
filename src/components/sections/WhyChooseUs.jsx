@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
     {
       icon: <FaLeaf className="text-3xl" />,
       title: "Premium Quality",
-      description: "Grade A+ bananas from certified organic farms",
+      description: "Grade A+ Cavendish G9 bananas from certified organic farms",
     },
     {
       icon: <FaShieldAlt className="text-3xl" />,
@@ -77,7 +77,7 @@ const WhyChooseUs = () => {
             Excellence
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            With over 15 years of expertise, we've perfected the art of banana
+            With over 6 years of expertise, we've perfected the art of Cavendish G9 banana
             export. Here's what sets us apart from the competition.
           </p>
         </motion.div>

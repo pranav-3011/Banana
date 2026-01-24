@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: <FaLeaf className="text-4xl" />,
       title: 'Premium Quality',
-      description: 'We source only the finest bananas from certified farms, ensuring top-grade quality in every shipment.',
+      description: 'We source only the finest Cavendish G9 bananas from certified farms, ensuring top-grade quality in every shipment.',
       color: 'text-green-600'
     },
     {
@@ -82,11 +82,11 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              GS Agritech is a premier banana export company with over 15 years of industry experience. We specialize in exporting premium quality Cavendish bananas to clients worldwide, delivering unwavering excellence in every shipment to over 50+ countries.
+              GS Agritech is a premier banana export company with over 6 years of industry experience. We specialize exclusively in exporting premium quality Cavendish G9 bananas to clients worldwide, delivering unwavering excellence in every shipment to over 50+ countries.
             </p>
             
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Our commitment to quality begins at the source. We work directly with certified banana farms, ensuring sustainable farming practices and superior produce. From careful sourcing and quality control to packaging and international shipping, every step is meticulously managed to guarantee fresh, premium-quality bananas reach your destination in perfect condition.
+              Our commitment to quality begins at the source. We work directly with certified Cavendish G9 banana farms, ensuring sustainable farming practices and superior produce. From careful sourcing and quality control to packaging and international shipping, every step is meticulously managed to guarantee fresh, premium-quality Cavendish G9 bananas reach your destination in perfect condition.
             </p>
 
             {/* Features Grid */}

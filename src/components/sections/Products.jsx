@@ -16,7 +16,7 @@ const Products = () => {
     image:
       "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=1200&q=80",
     description:
-      "Our flagship Cavendish bananas represent the pinnacle of quality in international banana trade. Renowned worldwide for their perfect ripening characteristics, exceptional sweetness, and extended shelf life, these premium bananas are the preferred choice of importers across 50+ countries.",
+      "Our flagship Cavendish G9 bananas represent the pinnacle of quality in international banana trade. Renowned worldwide for their perfect ripening characteristics, exceptional sweetness, and extended shelf life, these premium Cavendish G9 bananas are the preferred choice of importers across 50+ countries.",
     highlights: [
       {
         icon: <FaStar />,
