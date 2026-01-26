@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaTruck, FaWarehouse, FaBox, FaUsers, FaRoad, FaRocket, FaChartLine, FaHandshake, FaGlobe } from "react-icons/fa";
+import { FaMapMarkerAlt, FaTruck, FaWarehouse, FaBox, FaUsers, FaShieldAlt, FaRocket, FaChartLine, FaHandshake, FaGlobe } from "react-icons/fa";
 import aboutUs1 from "../Assets/about_us_1.png";
 import aboutUs2 from "../Assets/about_us_2.png";
 import aboutUs3 from "../Assets/about_us_3.png";
@@ -11,7 +11,7 @@ const OurCompany = () => {
     { icon: <FaWarehouse />, title: "Cold Storage", desc: "Complete cold storage chain available" },
     { icon: <FaBox />, title: "Packing Materials", desc: "Ready availability of packing resources" },
     { icon: <FaUsers />, title: "Skilled Labor", desc: "Plenty of skilled labor in the region" },
-    { icon: <FaRoad />, title: "Transportation", desc: "Well connected by highways" },
+    { icon: <FaShieldAlt />, title: "Quality Assurance", desc: "Rigorous quality control and certification" },
     { icon: <FaTruck />, title: "Port Proximity", desc: "Located close to import ports" },
   ];
 
@@ -70,8 +70,7 @@ const OurCompany = () => {
               {/* Left - Text */}
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
-                  GS Agritech is based at <strong className="text-gray-900">Indapur</strong>, surrounded by the{" "}
-                  <strong className="text-gray-900">Solapur region</strong> - a major hub for banana cultivation and export.
+                GS Agritech is a <strong className="text-gray-900">leading exporter of premium bananas</strong>, committed to delivering top-quality produce to global markets. With a focus on <strong className="text-gray-900">sustainability, farm-fresh practices, and rigorous quality control</strong>, we ensure our bananas reach you at their best. Sourcing from <strong className="text-gray-900">reliable partners</strong> in <strong className="text-gray-900">Andhra Pradesh and Maharashtra</strong>, we overcome regional challenges like winter-induced chilling to maintain our <strong className="text-gray-900">uncompromising quality standards</strong>. Partner with us for reliable, <strong className="text-gray-900">export-quality bananas</strong> that meet <strong className="text-gray-900">international standards</strong>.
                 </p>
                 <p>
                   Since <strong className="text-gray-900">2018</strong>, this region has been a preferred sourcing location

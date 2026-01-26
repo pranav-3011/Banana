@@ -82,7 +82,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              GS Agritech is a premier banana export company with over 6 years of industry experience. We specialize exclusively in exporting premium quality Cavendish G9 bananas to clients worldwide, delivering unwavering excellence in every shipment to over 50+ countries.
+              GS Agritech is a premier banana export company with over 8+ years of industry experience. We specialize exclusively in exporting premium quality Cavendish G9 bananas to clients worldwide, delivering unwavering excellence in every shipment to over 50+ countries.
             </p>
             
             <p className="text-gray-600 mb-8 leading-relaxed">

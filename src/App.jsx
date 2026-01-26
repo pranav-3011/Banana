@@ -9,10 +9,10 @@ import WhoAreWe from './pages/WhoAreWe'
 import OurTeam from './pages/OurTeam'
 import OurJourney from './pages/OurJourney'
 import CSR from './pages/CSR'
+import ShippingPartnership from './pages/ShippingPartnership'
 import CavendishG9 from './pages/CavendishG9'
 import OurNetwork from './pages/OurNetwork'
 import OurSuppliers from './pages/OurSuppliers'
-import Products from './pages/Products'
 import WhyChooseUs from './pages/WhyChooseUs'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
@@ -52,10 +52,10 @@ function App() {
           <Route path="/about/our-team" element={<OurTeam />} />
           <Route path="/about/our-journey" element={<OurJourney />} />
           <Route path="/about/csr" element={<CSR />} />
+          <Route path="/about/shipping-partnership" element={<ShippingPartnership />} />
           <Route path="/banana/cavendish-g9" element={<CavendishG9 />} />
           <Route path="/banana/our-network" element={<OurNetwork />} />
           <Route path="/banana/our-suppliers" element={<OurSuppliers />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

@@ -7,7 +7,7 @@ const Statistics = () => {
 
   const stats = [
     {
-      end: 6,
+      end: 8,
       suffix: "+",
       label: "YEARS EXPERIENCE",
     },

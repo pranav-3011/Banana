@@ -6,38 +6,39 @@ import iranMap from "../Assets/iran.png";
 import saudiArabiaMap from "../Assets/saudi_arabia.png";
 import turkeyMap from "../Assets/turkey.png";
 import afghanistanMap from "../Assets/afghanistan.png";
+import { IQ, IR, SA, AE, AF, TR } from "country-flag-icons/react/3x2";
 
 const OurNetwork = () => {
   const exportCountries = [
     { 
       name: "Iraq", 
       mapImage: iraqMap,
-      flag: "🇮🇶"
+      FlagComponent: IQ
     },
     { 
       name: "Iran", 
       mapImage: iranMap,
-      flag: "🇮🇷"
+      FlagComponent: IR
     },
     { 
       name: "Saudi Arabia", 
       mapImage: saudiArabiaMap,
-      flag: "🇸🇦"
+      FlagComponent: SA
     },
     { 
       name: "UAE - Dubai", 
       mapImage: saudiArabiaMap, // Using Saudi Arabia map as placeholder, can be replaced when UAE map is available
-      flag: "🇦🇪"
+      FlagComponent: AE
     },
     { 
       name: "Afghanistan", 
       mapImage: afghanistanMap,
-      flag: "🇦🇫"
+      FlagComponent: AF
     },
     { 
       name: "Turkey", 
       mapImage: turkeyMap,
-      flag: "🇹🇷"
+      FlagComponent: TR
     },
   ];
 
@@ -111,19 +112,15 @@ const OurNetwork = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="mb-20 md:mb-24"
             >
-              <div className="relative bg-white rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl border border-gray-100 overflow-hidden">
+              <div className="relative bg-green-50 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
                 {/* Decorative Background Elements */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary-100/30 to-secondary-100/30 rounded-full blur-3xl -mr-32 -mt-32"></div>
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-secondary-100/30 to-primary-100/30 rounded-full blur-3xl -ml-32 -mb-32"></div>
                 
                 <div className="relative z-10">
                   <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-                    <div className="flex-shrink-0">
-                      <div className="bg-gradient-to-br from-primary-500 to-secondary-500 text-white rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <FaGlobe className="text-5xl md:text-6xl" />
-                      </div>
-                    </div>
-                    <div className="flex-1 text-center md:text-left">
+                    
+                    <div className="flex-1 text-center ">
                       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                         Ready to Export Throughout Countries
                       </h2>
@@ -160,7 +157,9 @@ const OurNetwork = () => {
 
               {/* Countries Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-                {exportCountries.map((country, index) => (
+                {exportCountries.map((country, index) => {
+                  const FlagComponent = country.FlagComponent;
+                  return (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -176,8 +175,11 @@ const OurNetwork = () => {
                         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
                         <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
                         <div className="relative z-10">
-                          <div className="text-5xl md:text-6xl mb-3 transform group-hover:scale-110 transition-transform duration-300">
-                            {country.flag}
+                          <div className="mb-3 transform group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                            <FlagComponent 
+                              className="w-16 h-12 md:w-20 md:h-14 rounded-md shadow-lg border-2 border-white/20"
+                              title={`${country.name} flag`}
+                            />
                           </div>
                           <h3 className="text-xl md:text-2xl font-bold text-white drop-shadow-sm">
                             {country.name}
@@ -206,62 +208,13 @@ const OurNetwork = () => {
                       </div>
                     </div>
                   </motion.div>
-                ))}
+                  );
+                })}
               </div>
             </motion.div>
 
             {/* Export Capabilities Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="mb-12"
-            >
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                  Our Export <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">Capabilities</span>
-                </h2>
-                <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-                  Comprehensive solutions for seamless international trade
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                {capabilities.map((capability, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.9 + index * 0.1, duration: 0.5 }}
-                    whileHover={{ y: -5, scale: 1.02 }}
-                    className="group"
-                  >
-                    <div className="bg-white rounded-2xl p-6 md:p-8 border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-500 h-full relative overflow-hidden">
-                      {/* Gradient Background on Hover */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${capability.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                      
-                      {/* Icon */}
-                      <div className={`relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${capability.gradient} text-white mb-6 shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                        {capability.icon}
-                      </div>
-                      
-                      {/* Content */}
-                      <div className="relative z-10">
-                        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors duration-300">
-                          {capability.title}
-                        </h3>
-                        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                          {capability.description}
-                        </p>
-                      </div>
-                      
-                      {/* Decorative Corner */}
-                      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-100/50 to-secondary-100/50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+           
           </motion.div>
         </div>
       </div>

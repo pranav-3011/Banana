@@ -34,7 +34,6 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Products", path: "/products" },
     { name: "Why Choose Us", path: "/why-choose-us" },
     { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
@@ -45,6 +44,7 @@ const Navbar = () => {
     { name: "Who Are We", path: "/about/who-are-we" },
     { name: "Our Team", path: "/about/our-team" },
     { name: "CSR", path: "/about/csr" },
+    { name: "Shipping Partnership", path: "/about/shipping-partnership" },
   ];
 
   const bananaSubLinks = [

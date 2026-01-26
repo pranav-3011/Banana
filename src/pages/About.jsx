@@ -9,7 +9,7 @@ const AboutPage = () => {
         <title>About Us - GS Agritech | Premium Cavendish G9 Banana Exporter</title>
         <meta
           name="description"
-          content="Learn about GS Agritech, a premier banana export company specializing exclusively in premium Cavendish G9 bananas. Over 6 years of excellence in international banana trade."
+          content="Learn about GS Agritech, a premier banana export company specializing exclusively in premium Cavendish G9 bananas. Over 8+ years of excellence in international banana trade."
         />
         <meta
           name="keywords"

@@ -85,7 +85,6 @@ const Footer = () => {
                 "Home",
                 "About",
                 "Export Process",
-                "Products",
                 "Gallery",
                 "Contact",
               ].map((item) => (

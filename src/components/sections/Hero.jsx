@@ -39,9 +39,9 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="inline-block mb-6"
             >
-              <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+              {/* <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
                 Premium Quality Since 2018
-              </span>
+              </span> */}
             </motion.div>
 
             <motion.h1
@@ -64,7 +64,7 @@ const Hero = () => {
               className="text-xl text-gray-700 mb-8 leading-relaxed"
             >
               Leading banana export company specializing exclusively in premium Cavendish G9
-              bananas, serving 50+ countries worldwide with excellence,
+              bananas, serving 10+ countries worldwide with excellence,
               reliability, and a seamless export process. Your trusted partner
               in international banana trade.
             </motion.p>

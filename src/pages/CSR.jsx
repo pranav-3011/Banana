@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { FaUsers, FaChalkboardTeacher, FaLeaf, FaSeedling } from "react-icons/fa";
+import csrImage from "../Assets/csr.png";
 
 const CSR = () => {
   const csrActivities = [
@@ -17,8 +18,18 @@ const CSR = () => {
         <meta name="description" content="GS Agritech's CSR initiatives include farmer workshops, guidance, fertilizer support, and scheduled practices." />
       </Helmet>
 
-      <div className="min-h-screen flex items-center bg-white py-12 md:py-16">
-        <div className="container-custom w-full">
+      <div className=" bg-white">
+        {/* Full Width CSR Image */}
+        <div className="w-full">
+          <img 
+            src={csrImage} 
+            alt="GS Agritech CSR Initiatives - Supporting Our Farming Community" 
+            className="w-full h-[400px] object-fit"
+          />
+        </div>
+
+        <div className="py-12 md:py-16">
+          <div className="container-custom w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -70,6 +81,7 @@ const CSR = () => {
               </div>
             </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </>

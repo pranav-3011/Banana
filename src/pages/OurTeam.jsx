@@ -10,7 +10,7 @@ const OurTeam = () => {
       icon: <FaUserTie className="text-3xl" />,
     },
     {
-      name: "Tanaji Baban Gule",
+      name: "Tanaji Baban Gole",
       position: "Owner of Bhoomi Putra Udyog Bhandar",
       icon: <FaBriefcase className="text-3xl" />,
     },

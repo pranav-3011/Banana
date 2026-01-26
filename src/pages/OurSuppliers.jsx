@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { FaUsers, FaHandshake, FaCheckCircle, FaLeaf } from "react-icons/fa";
+import suppliersImage from "../Assets/suppliers.png";
 
 const OurSuppliers = () => {
   const supplierFeatures = [
@@ -17,8 +18,12 @@ const OurSuppliers = () => {
         <meta name="description" content="GS Agritech works with certified farms and trusted suppliers to ensure premium quality Cavendish G9 bananas for export." />
       </Helmet>
 
-      <div className="min-h-screen flex items-center bg-white py-12 md:py-16">
-        <div className="container-custom w-full">
+      <div className="bg-white">
+        {/* Full Width Suppliers Image */}
+        
+
+        <div className="py-12 md:py-16">
+          <div className="container-custom w-full">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +43,7 @@ const OurSuppliers = () => {
               {/* Left - Text */}
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
-                  GS Agritech works closely with a network of <strong className="text-gray-900">certified farms</strong> 
+                  GS Agritech works closely with a network of <strong className="text-gray-900">certified farms </strong> 
                   and trusted suppliers in the Solapur region. Our suppliers are carefully selected based on their 
                   commitment to quality, sustainable farming practices, and reliability.
                 </p>
@@ -55,23 +60,18 @@ const OurSuppliers = () => {
               </div>
 
               {/* Right - Supplier Features Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                {supplierFeatures.map((feature, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all"
-                  >
-                    <div className="text-primary-600 mb-2 text-xl">{feature.icon}</div>
-                    <h3 className="font-semibold text-gray-900 text-sm mb-1">{feature.title}</h3>
-                    <p className="text-xs text-gray-600 leading-tight">{feature.desc}</p>
-                  </motion.div>
-                ))}
+              <div className=" gap-4">
+              <div className="w-full">
+          <img 
+            src={suppliersImage} 
+            alt="Our Suppliers - Farm Locations Map" 
+            className="w-full h-[400px] object-contain"
+          />
+        </div>
               </div>
             </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </>
