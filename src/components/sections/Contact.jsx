@@ -35,11 +35,11 @@ const Contact = () => {
         "Indapur, Dist. Pune, Maharashtra, India",
       ],
     },
-    {
-      icon: <FaClock className="text-3xl" />,
-      title: "Business Hours",
-      details: ["Monday - Saturday: 9:00 AM - 6:00 PM", "Sunday: Closed"],
-    },
+    // {
+    //   icon: <FaClock className="text-3xl" />,
+    //   title: "Business Hours",
+    //   details: ["Monday - Saturday: 9:00 AM - 6:00 PM", "Sunday: Closed"],
+    // },
   ];
 
   return (

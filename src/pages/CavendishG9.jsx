@@ -10,7 +10,7 @@ const CavendishG9 = () => {
     { icon: <FaCheckCircle />, title: "Premium Quality", desc: "Grade A+ Cavendish G9 bananas" },
     { icon: <FaLeaf />, title: "Natural Growth", desc: "Grown without harmful chemicals" },
     { icon: <FaStar />, title: "Export Ready", desc: "International quality standards" },
-    { icon: <FaShieldAlt />, title: "Certified", desc: "ISO and HACCP certified" },
+    { icon: <FaShieldAlt />, title: "Certified", desc: "APEDA certified" },
   ];
 
   return (

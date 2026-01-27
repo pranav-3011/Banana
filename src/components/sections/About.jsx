@@ -12,7 +12,7 @@ const About = () => {
     {
       icon: <FaAward className="text-4xl" />,
       title: 'Certified Excellence',
-      description: 'ISO certified processes and international quality standards compliance for your peace of mind.',
+      description: 'APEDA certified processes and international quality standards compliance for your peace of mind.',
       color: 'text-blue-600'
     },
     {

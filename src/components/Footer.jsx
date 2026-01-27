@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logo from "../Assets/banana_logo.png";
 
 const Footer = () => {
@@ -39,9 +40,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Leading banana export company specializing exclusively in premium Cavendish G9
-              bananas. Quality, reliability, and excellence in every shipment to
-              50+ countries worldwide.
+              Established in 2018, GS Agritech is a leading banana export company specializing exclusively in premium Cavendish G9
+              bananas. With over 8+ years of experience and a network of 14,000+ farmers, we deliver quality, reliability, and excellence 
+              in every shipment to 10+ countries worldwide.
             </p>
             <div className="flex space-x-4">
               <a
@@ -81,24 +82,41 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {[
-                "Home",
-                "About",
-                "Export Process",
-                "Gallery",
-                "Contact",
-              ].map((item) => (
-                <li key={item}>
-                  <button
-                    onClick={() =>
-                      scrollToSection(item.toLowerCase().replace(" ", "-"))
-                    }
-                    className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
-                  >
-                    {item}
-                  </button>
-                </li>
-              ))}
+              <li>
+                <Link to="/" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/banana/cavendish-g9" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Cavendish G9
+                </Link>
+              </li>
+              <li>
+                <Link to="/banana/our-network" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Our Network
+                </Link>
+              </li>
+              <li>
+                <Link to="/why-choose-us" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Why Choose Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -107,22 +125,28 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-white mb-6">Our Services</h3>
             <ul className="space-y-3">
               <li className="hover:text-primary-500 transition-colors">
-                Banana Export Services
+                Premium Cavendish G9 Bananas
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Cavendish G9 Bananas
+                APEDA Certified Quality Assurance
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Quality Assurance
+                End-to-End Logistics Support
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Logistics Support
+                Shipping Partnership (Nirmala Global)
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Documentation
+                Customs Clearance Services
               </li>
               <li className="hover:text-primary-500 transition-colors">
-                Consultation
+                Temperature-Controlled Shipping
+              </li>
+              <li className="hover:text-primary-500 transition-colors">
+                Real-Time Shipment Tracking
+              </li>
+              <li className="hover:text-primary-500 transition-colors">
+                Export Documentation Support
               </li>
             </ul>
           </div>
@@ -140,28 +164,44 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <FaPhone className="text-primary-500 mr-3" />
-                <a
-                  href="tel:+919970849999"
-                  className="hover:text-primary-500 transition-colors"
-                >
-                  +91 9970849999
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href="tel:+919970849999"
+                    className="hover:text-primary-500 transition-colors"
+                  >
+                    +91 9970849999
+                  </a>
+                  <a
+                    href="tel:+919850419073"
+                    className="hover:text-primary-500 transition-colors text-sm"
+                  >
+                    +91 9850419073
+                  </a>
+                </div>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="text-primary-500 mr-3" />
-                <a
-                  href="mailto:info@gsagritech.com"
-                  className="hover:text-primary-500 transition-colors"
-                >
-                  info@gsagritech.com
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href="mailto:info@gsagritech.com"
+                    className="hover:text-primary-500 transition-colors"
+                  >
+                    info@gsagritech.com
+                  </a>
+                  <a
+                    href="mailto:export@gsagritech.com"
+                    className="hover:text-primary-500 transition-colors text-sm"
+                  >
+                    export@gsagritech.com
+                  </a>
+                </div>
               </li>
             </ul>
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h4 className="text-white font-semibold mb-2">Business Hours</h4>
               <p className="text-sm">Monday - Saturday: 9:00 AM - 6:00 PM</p>
               <p className="text-sm">Sunday: Closed</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

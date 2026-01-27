@@ -6,7 +6,7 @@ import csrImage from "../Assets/csr.png";
 const CSR = () => {
   const csrActivities = [
     { icon: <FaChalkboardTeacher />, title: "Workshops", desc: "Conducting educational workshops for farmers" },
-    { icon: <FaUsers />, title: "Farmer Guidance", desc: "Providing comprehensive guidance to farmers" },
+    { icon: <FaUsers />, title: "Farmer Guidance", desc: "Guiding 14,000+ farmers with comprehensive support" },
     { icon: <FaLeaf />, title: "Fertilizer Support", desc: "Assisting with quality fertilizers" },
     { icon: <FaSeedling />, title: "Scheduled Practices", desc: "Educating on proper farming schedules" },
   ];
@@ -41,7 +41,10 @@ const CSR = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
                 Corporate Social Responsibility
               </h1>
-              <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-4"></div>
+              <p className="text-lg md:text-xl text-gray-700 font-semibold">
+                Guiding and Supporting <span className="text-primary-600">14,000+ Farmers</span> Across Our Network
+              </p>
             </div>
 
             {/* Content Grid */}
@@ -50,16 +53,18 @@ const CSR = () => {
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
                   At GS Agritech, we believe in giving back to the farming community that forms the
-                  foundation of our business.
+                  foundation of our business. We are proud to guide and support a network of <strong className="text-gray-900">14,000+ farmers</strong> across 
+                  <strong className="text-gray-900"> Andhra Pradesh and Maharashtra</strong>, helping them achieve better yields and sustainable farming practices.
                 </p>
                 <p>
-                  Our CSR activities include <strong className="text-gray-900">giving guidance to farmers</strong>, conducting{" "}
+                  Our CSR activities include <strong className="text-gray-900">giving guidance to 14,000+ farmers</strong>, conducting{" "}
                   <strong className="text-gray-900">workshops</strong>, providing <strong className="text-gray-900">fertilizer support</strong>, and
                   educating them about <strong className="text-gray-900">scheduled practices</strong> for optimal agricultural outcomes.
                 </p>
                 <p>
-                  Through these initiatives, we aim to improve the livelihoods of farmers, enhance
-                  agricultural productivity, and promote sustainable farming practices in the region.
+                  Through these initiatives, we aim to improve the livelihoods of our extensive farmer network, enhance
+                  agricultural productivity, and promote sustainable farming practices across the region. Our commitment to 
+                  farmer welfare ensures that the entire supply chain benefits from our expertise and support.
                 </p>
               </div>
 

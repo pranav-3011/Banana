@@ -62,7 +62,10 @@ const OurCompany = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
                 OUR COMPANY
               </h1>
-              <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-4"></div>
+              <p className="text-lg md:text-xl text-gray-700 font-semibold">
+                Established in <span className="text-primary-600">2018</span> • With a network of <span className="text-primary-600">14,000+ farmers</span>
+              </p>
             </div>
 
             {/* Content Grid */}
@@ -70,7 +73,10 @@ const OurCompany = () => {
               {/* Left - Text */}
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
-                GS Agritech is a <strong className="text-gray-900">leading exporter of premium bananas</strong>, committed to delivering top-quality produce to global markets. With a focus on <strong className="text-gray-900">sustainability, farm-fresh practices, and rigorous quality control</strong>, we ensure our bananas reach you at their best. Sourcing from <strong className="text-gray-900">reliable partners</strong> in <strong className="text-gray-900">Andhra Pradesh and Maharashtra</strong>, we overcome regional challenges like winter-induced chilling to maintain our <strong className="text-gray-900">uncompromising quality standards</strong>. Partner with us for reliable, <strong className="text-gray-900">export-quality bananas</strong> that meet <strong className="text-gray-900">international standards</strong>.
+                GS Agritech is a <strong className="text-gray-900">leading exporter of premium bananas</strong>, committed to delivering top-quality produce to global markets. <strong className="text-gray-900">Established in 2018</strong>, we have built a strong network of <strong className="text-gray-900">14,000+ farmers</strong> across <strong className="text-gray-900">Andhra Pradesh and Maharashtra</strong>. With a focus on <strong className="text-gray-900">sustainability, farm-fresh practices, and rigorous quality control</strong>, we ensure our bananas reach you at their best.
+                </p>
+                <p>
+                  Our extensive farmer network enables us to source premium quality Cavendish G9 bananas consistently throughout the year. We work directly with farmers, providing them with guidance, support, and fair pricing, ensuring sustainable farming practices and superior produce.
                 </p>
                 <p>
                   Since <strong className="text-gray-900">2018</strong>, this region has been a preferred sourcing location
