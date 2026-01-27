@@ -19,6 +19,15 @@ import g15 from "../../Assets/gallery/g15.jpeg";
 import g16 from "../../Assets/gallery/g16.jpeg";
 import g17 from "../../Assets/gallery/g17.jpeg";
 import g18 from "../../Assets/gallery/g18.jpeg";
+import g19 from "../../Assets/gallery/g19.jpeg";
+import g20 from "../../Assets/gallery/g20.jpeg";
+import g21 from "../../Assets/gallery/g21.jpeg";
+import g22 from "../../Assets/gallery/g22.jpeg";
+import g23 from "../../Assets/gallery/g23.jpeg";
+import g24 from "../../Assets/gallery/g24.jpeg";
+import g25 from "../../Assets/gallery/g25.jpeg";
+import g26 from "../../Assets/gallery/g26.jpeg";
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -154,11 +163,7 @@ const Gallery = () => {
       // title: 'Quality Control',
       // category: 'Quality Control'
     },
-    {
-      url: g27,
-      // title: 'Quality Control',
-      // category: 'Quality Control'
-    },
+    
   ];
 
   return (
