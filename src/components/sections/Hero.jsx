@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import frameImage from "../../Assets/frame.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -75,18 +76,13 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap justify-center gap-4 mb-12"
             >
-              <button
-                onClick={() => scrollToSection("contact")}
+              <Link
+                onClick={() => window.location.href = "/contact"}
                 className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-primary-700 hover:to-secondary-700 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Get a Quote
-              </button>
-              <button
-                onClick={() => scrollToSection("export-process")}
-                className="bg-transparent border-2 border-primary-600 text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 transform hover:scale-105"
-              >
-                Learn More
-              </button>
+              </Link>
+              
             </motion.div>
           </motion.div>
         </div>

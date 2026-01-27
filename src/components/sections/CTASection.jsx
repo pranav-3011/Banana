@@ -49,12 +49,7 @@ const CTASection = () => {
             >
               Get Started Now
             </Link>
-            <Link
-              to="/export-process"
-              className="bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-            >
-              Learn Our Process
-            </Link>
+           
           </div>
         </motion.div>
       </div>
