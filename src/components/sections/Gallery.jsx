@@ -114,6 +114,51 @@ const Gallery = () => {
       // title: 'Quality Control',
       // category: 'Quality Control'
     },
+    {
+      url: g19,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g20,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g21,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g22,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g23,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g24,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g25,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g26,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
+    {
+      url: g27,
+      // title: 'Quality Control',
+      // category: 'Quality Control'
+    },
   ];
 
   return (
