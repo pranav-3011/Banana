@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import { FaUserTie, FaBriefcase } from "react-icons/fa";
 
@@ -16,12 +16,34 @@ const OurTeam = () => {
     },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "GS Agritech",
+    employee: [
+      {
+        "@type": "Person",
+        name: "Santosh Sukhdev Suryavanshi",
+        jobTitle: "Managing Director",
+      },
+      {
+        "@type": "Person",
+        name: "Tanaji Baban Gole",
+        jobTitle: "Owner of Bhoomi Putra Udyog Bhandar",
+      },
+    ],
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Our Team - GS Agritech | Leadership & Management</title>
-        <meta name="description" content="Meet the leadership team of GS Agritech - Santosh Sukhdev Suryavanshi (MD) and Tanaji Baban Gule." />
-      </Helmet>
+      <SEO
+        title="Our Team - GS Agritech | Leadership & Management"
+        description="Meet the leadership team of GS Agritech - Santosh Sukhdev Suryavanshi (Managing Director) and Tanaji Baban Gole (Owner of Bhoomi Putra Udyog Bhandar)."
+        keywords="GS Agritech team, leadership, management, Santosh Sukhdev Suryavanshi, Tanaji Baban Gole, banana exporter management"
+        url="/about/our-team"
+        image="/og-image.jpg"
+        structuredData={structuredData}
+      />
 
       <div className=" my-24 flex items-center bg-white py-12 md:py-16">
         <div className="container-custom w-full">

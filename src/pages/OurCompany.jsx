@@ -1,25 +1,60 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaTruck, FaWarehouse, FaBox, FaUsers, FaShieldAlt, FaRocket, FaChartLine, FaHandshake, FaGlobe } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaTruck,
+  FaWarehouse,
+  FaBox,
+  FaUsers,
+  FaShieldAlt,
+  FaRocket,
+  FaChartLine,
+  FaHandshake,
+  FaGlobe,
+} from "react-icons/fa";
 import aboutUs1 from "../Assets/about_us_1.png";
 import aboutUs2 from "../Assets/about_us_2.png";
 import aboutUs3 from "../Assets/about_us_3.png";
 
 const OurCompany = () => {
   const features = [
-    { icon: <FaMapMarkerAlt />, title: "Strategic Location", desc: "Indapur, Solapur region - major banana hub since 2013" },
-    { icon: <FaWarehouse />, title: "Cold Storage", desc: "Complete cold storage chain available" },
-    { icon: <FaBox />, title: "Packing Materials", desc: "Ready availability of packing resources" },
-    { icon: <FaUsers />, title: "Skilled Labor", desc: "Plenty of skilled labor in the region" },
-    { icon: <FaShieldAlt />, title: "Quality Assurance", desc: "Rigorous quality control and certification" },
-    { icon: <FaTruck />, title: "Port Proximity", desc: "Located close to import ports" },
+    {
+      icon: <FaMapMarkerAlt />,
+      title: "Strategic Location",
+      desc: "Karmala–Solapur hub: Kandhar, Ujani backwaters, Malshiras, Madha, Pandharpur, Indapur",
+    },
+    {
+      icon: <FaWarehouse />,
+      title: "Cold Storage",
+      desc: "Complete cold storage chain available",
+    },
+    {
+      icon: <FaBox />,
+      title: "Packing Materials",
+      desc: "Ready availability of packing resources",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Skilled Labor",
+      desc: "Plenty of skilled labor in the region",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Quality Assurance",
+      desc: "Rigorous quality control and certification",
+    },
+    {
+      icon: <FaTruck />,
+      title: "JNPT Proximity",
+      desc: "Direct connectivity via national highways for efficient farm-to-port movement",
+    },
   ];
 
   const milestones = [
     {
-      year: "2018",
-      title: "Established",
-      description: "GS Agritech was founded",
+      year: "5-6 years",
+      title: "Operating",
+      description: "GS Agritech began banana export operations",
       icon: <FaRocket className="text-2xl" />,
     },
     {
@@ -31,7 +66,8 @@ const OurCompany = () => {
     {
       year: "2022",
       title: "International Partnership",
-      description: "Tie-up with Nirmala Global India Pvt Limited for Gulf region",
+      description:
+        "Tie-up with Nirmala Global India Pvt Limited for Gulf region",
       icon: <FaHandshake className="text-2xl" />,
     },
     {
@@ -42,12 +78,33 @@ const OurCompany = () => {
     },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "GS Agritech",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Indapur",
+      addressRegion: "Maharashtra",
+      addressCountry: "IN",
+    },
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      value: "15,000+",
+      unitText: "farmers",
+    },
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Our Company - GS Agritech | Premium Banana Exporter</title>
-        <meta name="description" content="GS Agritech is based in Indapur, surrounded by Solapur region - a major banana hub. Complete ecosystem for banana export." />
-      </Helmet>
+      <SEO
+        title="Our Company - GS Agritech | Premium Banana Exporter"
+        description="GS Agritech is based in the Karmala–Solapur banana hub (Indapur, Kandhar, Ujani backwaters, Malshiras, Madha, Pandharpur). Complete ecosystem for banana export with 15,000+ farmers network and JNPT-linked logistics."
+        keywords="GS Agritech company, Indapur banana exporter, Solapur banana hub, agricultural exporter India, banana export company"
+        url="/about/our-company"
+        image="/og-image.jpg"
+        structuredData={structuredData}
+      />
 
       <div className="min-h-screen-60 mt-24 flex items-center flex-col bg-white ">
         <div className="container-custom w-full">
@@ -64,7 +121,10 @@ const OurCompany = () => {
               </h1>
               <div className="w-20 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-4"></div>
               <p className="text-lg md:text-xl text-gray-700 font-semibold">
-                Established in <span className="text-primary-600">2018</span> • With a network of <span className="text-primary-600">14,000+ farmers</span>
+                Operating for{" "}
+                <span className="text-primary-600">5-6 years</span> • With a
+                network of{" "}
+                <span className="text-primary-600">15,000+ farmers</span>
               </p>
             </div>
 
@@ -73,23 +133,56 @@ const OurCompany = () => {
               {/* Left - Text */}
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
-                GS Agritech is a <strong className="text-gray-900">leading exporter of premium bananas</strong>, committed to delivering top-quality produce to global markets. <strong className="text-gray-900">Established in 2018</strong>, we have built a strong network of <strong className="text-gray-900">14,000+ farmers</strong> across <strong className="text-gray-900">Andhra Pradesh and Maharashtra</strong>. With a focus on <strong className="text-gray-900">sustainability, farm-fresh practices, and rigorous quality control</strong>, we ensure our bananas reach you at their best.
+                  GS Agritech is a{" "}
+                  <strong className="text-gray-900">
+                    leading exporter of premium bananas
+                  </strong>
+                  , operating in the sector for{" "}
+                  <strong className="text-gray-900">5-6 years</strong>. We
+                  operate in the{" "}
+                  <strong className="text-gray-900">
+                    Karmala region of Solapur district
+                  </strong>
+                  —including Kandhar, villages along the Ujani backwaters, and
+                  selected areas of Malshiras, Madha, Pandharpur, and Indapur
+                  talukas—where a stable agro-climatic environment supports
+                  large-scale production of export-grade bananas.
                 </p>
                 <p>
-                  Our extensive farmer network enables us to source premium quality Cavendish G9 bananas consistently throughout the year. We work directly with farmers, providing them with guidance, support, and fair pricing, ensuring sustainable farming practices and superior produce.
+                  Through our associate platform{" "}
+                  <strong className="text-gray-900">
+                    Bhumiputra Krushi Udyog Bhandar
+                  </strong>
+                  , we have maintained close working relationships with farmers
+                  in this region for{" "}
+                  <strong className="text-gray-900">over 20 years</strong>. We
+                  remain in continuous contact with{" "}
+                  <strong className="text-gray-900">
+                    more than 15,000 farmers
+                  </strong>
+                  , giving us a strong, dependable sourcing base. Our direct
+                  farmer network provides real-time visibility into crop
+                  conditions—from fertilizer programs and irrigation to plant
+                  protection—enabling efficient export planning and precise
+                  allocation to meet importer specifications.
                 </p>
                 <p>
-                  Since <strong className="text-gray-900">2018</strong>, this region has been a preferred sourcing location
-                  for export companies. The complete ecosystem is available here to export bananas efficiently.
+                  The region offers a strong logistics advantage due to its
+                  proximity to{" "}
+                  <strong className="text-gray-900">JNPT Port</strong> and
+                  direct connectivity via national highways. Efficient
+                  farm-to-packhouse-to-port movement ensures predictable transit
+                  times, reduced handling risk, and reliable logistics
+                  execution.
                 </p>
                 <p>
-                  We have availability of <strong className="text-gray-900">cold storage</strong>,{" "}
-                  <strong className="text-gray-900">packing materials</strong>, and{" "}
-                  <strong className="text-gray-900">skilled labor</strong>. The region is close to import ports
-                  and well connected by highways with a <strong className="text-gray-900">strong transportation network</strong>.
-                </p>
-                <p>
-                  Due to this strategic advantage, we can fulfill large export orders within committed timelines.
+                  We have availability of{" "}
+                  <strong className="text-gray-900">cold storage</strong>,{" "}
+                  <strong className="text-gray-900">packing materials</strong>,
+                  and <strong className="text-gray-900">skilled labor</strong>.
+                  The complete ecosystem is available here to export bananas
+                  efficiently, and we can fulfill large export orders within
+                  committed timelines.
                 </p>
               </div>
 
@@ -103,9 +196,15 @@ const OurCompany = () => {
                     transition={{ delay: index * 0.1 }}
                     className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all"
                   >
-                    <div className="text-primary-600 mb-2 text-xl">{feature.icon}</div>
-                    <h3 className="font-semibold text-gray-900 text-sm mb-1">{feature.title}</h3>
-                    <p className="text-xs text-gray-600 leading-tight">{feature.desc}</p>
+                    <div className="text-primary-600 mb-2 text-xl">
+                      {feature.icon}
+                    </div>
+                    <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs text-gray-600 leading-tight">
+                      {feature.desc}
+                    </p>
                   </motion.div>
                 ))}
               </div>
@@ -113,8 +212,8 @@ const OurCompany = () => {
           </motion.div>
         </div>
 
-          {/* Our Journey Section */}
-          <div className="container-custom w-full mt-12 md:mt-20">
+        {/* Our Journey Section */}
+        <div className="container-custom w-full mt-12 md:mt-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -188,8 +287,6 @@ const OurCompany = () => {
             </div>
           </div>
         </motion.div>
-
-      
       </div>
     </>
   );

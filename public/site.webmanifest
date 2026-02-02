@@ -1,0 +1,22 @@
+{
+  "name": "GS Agritech - Premium Banana Exporter",
+  "short_name": "GS Agritech",
+  "description": "Leading agricultural exporter specializing in premium Cavendish G9 bananas",
+  "icons": [
+    {
+      "src": "/src/Assets/logo_banana_bg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/Assets/logo_banana_bg.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#16a34a",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

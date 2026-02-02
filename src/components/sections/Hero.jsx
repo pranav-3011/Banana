@@ -25,9 +25,8 @@ const Hero = () => {
         />
       </div>
 
-
       {/* Content */}
-      <div className="container-custom relative z-20 mt-56">
+      <div className="container-custom relative z-20 mt-5">
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,7 +40,7 @@ const Hero = () => {
               className="inline-block mb-6"
             >
               {/* <span className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                Premium Quality Since 2018
+                Premium Quality for 5-6 Years
               </span> */}
             </motion.div>
 
@@ -64,10 +63,14 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-700 mb-8 leading-relaxed"
             >
-              Leading banana export company specializing exclusively in premium Cavendish G9
-              bananas, serving 10+ countries worldwide with excellence,
-              reliability, and a seamless export process. Your trusted partner
-              in international banana trade.
+              Leading banana export company specializing exclusively in premium
+              Cavendish G9 bananas, with a strong relationship with{" "}
+              <strong className="text-gray-900">15,000+ farmers</strong> across
+              the Karmala–Solapur banana hub. Through our associate platform
+              Bhumiputra Krushi Udyog Bhandar, we have worked with farmers in
+              this region for over 20 years—giving us real-time visibility into
+              crop conditions and reliable sourcing. Serving 10+ countries with
+              excellence, JNPT-linked logistics, and a seamless export process.
             </motion.p>
 
             <motion.div
@@ -77,12 +80,11 @@ const Hero = () => {
               className="flex flex-wrap justify-center gap-4 mb-12"
             >
               <Link
-                onClick={() => window.location.href = "/contact"}
+                onClick={() => (window.location.href = "/contact")}
                 className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-primary-700 hover:to-secondary-700 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Get a Quote
               </Link>
-              
             </motion.div>
           </motion.div>
         </div>

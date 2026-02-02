@@ -59,15 +59,17 @@ const Contact = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Let's Start Your{" "}
-            <span className="text-primary-600">Cavendish G9 Import Journey</span>
+            <span className="text-primary-600">
+              Cavendish G9 Import Journey
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to import premium Cavendish G9 bananas? Fill out the form below and our team will get back to you within 24
-            hours.
+            Ready to import premium Cavendish G9 bananas? Fill out the form
+            below and our team will get back to you within 24 hours.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Contact Info Cards - Now at top in minimalistic style */}
           {contactInfo.map((info, index) => (
             <motion.div
@@ -107,7 +109,8 @@ const Contact = () => {
                 What We Expect From You
               </h3>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                To provide you with the best quote and service, please include the following information in your inquiry
+                To provide you with the best quote and service, please include
+                the following information in your inquiry
               </p>
             </div>
 
@@ -119,7 +122,9 @@ const Contact = () => {
                     <FaBox className="text-primary-600 text-xl" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 mb-2">Product Details</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Product Details
+                    </h4>
                     <ul className="space-y-1 text-sm text-gray-600">
                       <li className="flex items-start gap-2">
                         <FaCheckCircle className="text-primary-500 mt-0.5 flex-shrink-0" />
@@ -145,7 +150,9 @@ const Contact = () => {
                     <FaShippingFast className="text-secondary-600 text-xl" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 mb-2">Delivery Terms</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Delivery Terms
+                    </h4>
                     <ul className="space-y-1 text-sm text-gray-600">
                       <li className="flex items-start gap-2">
                         <FaCheckCircle className="text-secondary-500 mt-0.5 flex-shrink-0" />
@@ -171,7 +178,9 @@ const Contact = () => {
                     <FaDollarSign className="text-yellow-600 text-xl" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 mb-2">Pricing & Volume</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Pricing & Volume
+                    </h4>
                     <ul className="space-y-1 text-sm text-gray-600">
                       <li className="flex items-start gap-2">
                         <FaCheckCircle className="text-yellow-600 mt-0.5 flex-shrink-0" />
@@ -197,7 +206,9 @@ const Contact = () => {
                     <FaFileAlt className="text-blue-600 text-xl" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 mb-2">Additional Information</h4>
+                    <h4 className="font-bold text-gray-900 mb-2">
+                      Additional Information
+                    </h4>
                     <ul className="space-y-1 text-sm text-gray-600">
                       <li className="flex items-start gap-2">
                         <FaCheckCircle className="text-blue-500 mt-0.5 flex-shrink-0" />

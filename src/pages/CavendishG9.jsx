@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaLeaf, FaStar, FaShieldAlt } from "react-icons/fa";
 import box1 from "../Assets/box_1.png";
@@ -7,18 +7,58 @@ import box3 from "../Assets/box_3.png";
 
 const CavendishG9 = () => {
   const features = [
-    { icon: <FaCheckCircle />, title: "Premium Quality", desc: "Grade A+ Cavendish G9 bananas" },
-    { icon: <FaLeaf />, title: "Natural Growth", desc: "Grown without harmful chemicals" },
-    { icon: <FaStar />, title: "Export Ready", desc: "International quality standards" },
+    {
+      icon: <FaCheckCircle />,
+      title: "Premium Quality",
+      desc: "Grade A+ Cavendish G9 bananas",
+    },
+    {
+      icon: <FaLeaf />,
+      title: "Natural Growth",
+      desc: "Grown without harmful chemicals",
+    },
+    {
+      icon: <FaStar />,
+      title: "Export Ready",
+      desc: "International quality standards",
+    },
     { icon: <FaShieldAlt />, title: "Certified", desc: "APEDA certified" },
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Cavendish G9 Bananas",
+    description:
+      "Premium Cavendish G9 bananas - the finest quality banana variety for export. Grade A+ quality, certified, and export-ready.",
+    brand: {
+      "@type": "Brand",
+      name: "GS Agritech",
+    },
+    category: "Fresh Produce",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "USD",
+      itemCondition: "https://schema.org/NewCondition",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+  };
+
   return (
     <>
-      <Helmet>
-        <title>Cavendish G9 - GS Agritech | Premium Banana Variety</title>
-        <meta name="description" content="Premium Cavendish G9 bananas - the finest quality banana variety for export. Grade A+ quality, certified, and export-ready." />
-      </Helmet>
+      <SEO
+        title="Cavendish G9 - GS Agritech | Premium Banana Variety"
+        description="Premium Cavendish G9 bananas - the finest quality banana variety for export. Grade A+ quality, certified, and export-ready."
+        keywords="Cavendish G9, Cavendish G9 bananas, premium bananas, Grade A+ bananas, APEDA certified bananas, export quality bananas"
+        url="/banana/cavendish-g9"
+        image="/og-image.jpg"
+        structuredData={structuredData}
+      />
 
       <div className="py-12 md:py-16">
         <div className="container-custom w-full">
@@ -69,19 +109,26 @@ const CavendishG9 = () => {
               {/* Left - Text */}
               <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Cavendish G9</strong> is our flagship banana variety, 
-                  known for its exceptional quality, consistent size, and superior taste. This premium variety 
-                  is specifically selected for international export markets.
+                  <strong className="text-gray-900">Cavendish G9</strong> is our
+                  flagship banana variety, known for its exceptional quality,
+                  consistent size, and superior taste. This premium variety is
+                  specifically selected for international export markets.
                 </p>
                 <p>
-                  Our Cavendish G9 bananas are cultivated with meticulous care, ensuring they meet the highest 
-                  international quality standards. Each banana is handpicked at the perfect ripeness stage to 
-                  ensure optimal freshness upon arrival at your destination.
+                  Our Cavendish G9 bananas are cultivated with meticulous care,
+                  ensuring they meet the highest international quality
+                  standards. Each banana is handpicked at the perfect ripeness
+                  stage to ensure optimal freshness upon arrival at your
+                  destination.
                 </p>
                 <p>
-                  We specialize exclusively in exporting <strong className="text-gray-900">Cavendish G9 bananas</strong>, 
-                  making us experts in this variety. Our extensive experience ensures consistent quality, 
-                  reliable supply, and seamless export processes.
+                  We specialize exclusively in exporting{" "}
+                  <strong className="text-gray-900">
+                    Cavendish G9 bananas
+                  </strong>
+                  , making us experts in this variety. Our extensive experience
+                  ensures consistent quality, reliable supply, and seamless
+                  export processes.
                 </p>
               </div>
 
@@ -95,9 +142,15 @@ const CavendishG9 = () => {
                     transition={{ delay: index * 0.1 }}
                     className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all"
                   >
-                    <div className="text-primary-600 mb-2 text-xl">{feature.icon}</div>
-                    <h3 className="font-semibold text-gray-900 text-sm mb-1">{feature.title}</h3>
-                    <p className="text-xs text-gray-600 leading-tight">{feature.desc}</p>
+                    <div className="text-primary-600 mb-2 text-xl">
+                      {feature.icon}
+                    </div>
+                    <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs text-gray-600 leading-tight">
+                      {feature.desc}
+                    </p>
                   </motion.div>
                 ))}
               </div>

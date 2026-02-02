@@ -103,9 +103,10 @@ const WhyChooseUs = () => {
             Excellence
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            With over 8+ years of expertise, we've perfected the art of Cavendish G9 banana
-            export. Combined with our strategic shipping partnership with Nirmala Global India Pvt. Ltd., 
-            we offer comprehensive solutions that set us apart from the competition.
+            With 5-6 years of expertise, we've perfected the art of Cavendish G9
+            banana export. Combined with our strategic shipping partnership with
+            Nirmala Global India Pvt. Ltd., we offer comprehensive solutions
+            that set us apart from the competition.
           </p>
         </motion.div>
 

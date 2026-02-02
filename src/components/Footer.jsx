@@ -36,13 +36,17 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold text-white">GS Agritech</h3>
-                <p className="text-xs text-gray-400">Premium Cavendish G9 Banana Exporter</p>
+                <p className="text-xs text-gray-400">
+                  Premium Cavendish G9 Banana Exporter
+                </p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Established in 2018, GS Agritech is a leading banana export company specializing exclusively in premium Cavendish G9
-              bananas. With over 8+ years of experience and a network of 14,000+ farmers, we deliver quality, reliability, and excellence 
-              in every shipment to 10+ countries worldwide.
+              Operating for 5-6 years, GS Agritech is a leading banana export
+              company specializing exclusively in premium Cavendish G9 bananas.
+              With 5-6 years of experience and a network of 15,000+ farmers, we
+              deliver quality, reliability, and excellence in every shipment to
+              10+ countries worldwide.
             </p>
             <div className="flex space-x-4">
               <a
@@ -83,37 +87,58 @@ const Footer = () => {
             <h3 className="text-lg font-bold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/about"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/banana/cavendish-g9" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/banana/cavendish-g9"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Cavendish G9
                 </Link>
               </li>
               <li>
-                <Link to="/banana/our-network" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/banana/our-network"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Our Network
                 </Link>
               </li>
               <li>
-                <Link to="/why-choose-us" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/why-choose-us"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Why Choose Us
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/gallery"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block">
+                <Link
+                  to="/contact"
+                  className="hover:text-primary-500 transition-colors hover:translate-x-2 inline-block"
+                >
                   Contact
                 </Link>
               </li>
