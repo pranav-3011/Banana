@@ -67,7 +67,9 @@ const Navbar = () => {
               +91 9970849999
             </a>
             <a
-              href="mailto:info@gsagritech.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gsagritech.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center hover:text-primary-100 transition"
             >
               <FaEnvelope className="mr-2" />

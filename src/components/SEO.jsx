@@ -24,16 +24,16 @@ const SEO = ({
     "@type": "Organization",
     name: "GS Agritech",
     url: baseUrl,
-    logo: `${baseUrl}/logo_banana_bg.png`,
+    logo: `${baseUrl}/src/Assets/logo_banana_bg.png`,
     description:
       "Leading agricultural exporter specializing in premium Cavendish G9 bananas",
-    sameAs: [
-      // Add social media links if available
-    ],
+    sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Sales",
+      email: "info@gsagritech.com",
       areaServed: "Worldwide",
+      availableLanguage: "English",
     },
   };
 
@@ -64,11 +64,13 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullImageUrl} />
+      <meta property="og:image:secure_url" content={fullImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:locale" content="en_US" />
+      <meta property="og:locale:alternate" content="en_IN" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

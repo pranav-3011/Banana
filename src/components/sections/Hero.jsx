@@ -61,7 +61,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-gray-700 mb-8 leading-relaxed"
+              className="text-xl text-gray-900 font-medium mb-8 leading-relaxed"
             >
               Leading banana export company specializing exclusively in premium
               Cavendish G9 bananas, with a strong relationship with{" "}

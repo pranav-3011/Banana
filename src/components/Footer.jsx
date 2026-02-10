@@ -198,7 +198,7 @@ const Footer = () => {
                   </a>
                   <a
                     href="tel:+919850419073"
-                    className="hover:text-primary-500 transition-colors text-sm"
+                    className="hover:text-primary-500 transition-colors "
                   >
                     +91 9850419073
                   </a>
@@ -208,17 +208,19 @@ const Footer = () => {
                 <FaEnvelope className="text-primary-500 mr-3" />
                 <div className="flex flex-col">
                   <a
-                    href="mailto:info@gsagritech.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gsagritech.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-primary-500 transition-colors"
                   >
                     info@gsagritech.com
                   </a>
-                  <a
+                  {/* <a
                     href="mailto:export@gsagritech.com"
                     className="hover:text-primary-500 transition-colors text-sm"
                   >
                     export@gsagritech.com
-                  </a>
+                  </a> */}
                 </div>
               </li>
             </ul>

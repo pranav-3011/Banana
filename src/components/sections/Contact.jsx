@@ -25,7 +25,7 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-3xl" />,
       title: "Email",
-      details: ["info@gsagritech.com", "export@gsagritech.com"],
+      details: ["info@gsagritech.com"],
     },
     {
       icon: <FaMapMarkerAlt className="text-3xl" />,
@@ -84,11 +84,23 @@ const Contact = () => {
                 {info.icon}
               </div>
               <h4 className="font-bold text-gray-900 mb-3">{info.title}</h4>
-              {info.details.map((detail, idx) => (
-                <p key={idx} className="text-gray-600 text-sm">
-                  {detail}
-                </p>
-              ))}
+              {info.details.map((detail, idx) =>
+                info.title === "Email" ? (
+                  <a
+                    key={idx}
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gsagritech.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" text-sm text-gray-600 block"
+                  >
+                    {detail}
+                  </a>
+                ) : (
+                  <p key={idx} className="text-gray-600 text-sm">
+                    {detail}
+                  </p>
+                )
+              )}
             </motion.div>
           ))}
         </div>
@@ -322,7 +334,9 @@ const Contact = () => {
                     Call Now
                   </a>
                   <a
-                    href="mailto:info@gsagritech.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@gsagritech.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 text-white py-3 rounded-lg font-semibold hover:bg-white/20 transition"
                   >
                     <FaEnvelope className="mr-2" />

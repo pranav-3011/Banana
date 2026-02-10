@@ -1,18 +1,19 @@
 import SEO from "../components/SEO";
 import { motion } from "framer-motion";
-import { FaUserTie, FaBriefcase } from "react-icons/fa";
+import santoshPhoto from "../Assets/santosh_suryawanshi.jpeg";
+import tanajiPhoto from "../Assets/tanaji_gole.jpeg";
 
 const OurTeam = () => {
   const teamMembers = [
     {
       name: "Santosh Sukhdev Suryavanshi",
       position: "Managing Director",
-      icon: <FaUserTie className="text-3xl" />,
+      image: santoshPhoto,
     },
     {
       name: "Tanaji Baban Gole",
       position: "Owner of Bhoomi Putra Udyog Bhandar",
-      icon: <FaBriefcase className="text-3xl" />,
+      image: tanajiPhoto,
     },
   ];
 
@@ -25,11 +26,13 @@ const OurTeam = () => {
         "@type": "Person",
         name: "Santosh Sukhdev Suryavanshi",
         jobTitle: "Managing Director",
+        image: "https://www.gsagritech.com/src/Assets/santosh_suryawanshi.jpeg",
       },
       {
         "@type": "Person",
         name: "Tanaji Baban Gole",
         jobTitle: "Owner of Bhoomi Putra Udyog Bhandar",
+        image: "https://www.gsagritech.com/src/Assets/tanaji_gole.jpeg",
       },
     ],
   };
@@ -69,10 +72,14 @@ const OurTeam = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
-                  className="bg-white border-2 border-gray-200 rounded-xl p-6 md:p-8 hover:border-primary-300 hover:shadow-lg transition-all text-center"
+                  className="bg-white border-2 border-gray-200 rounded-xl p-6 md:p-8 hover:border-primary-300 hover:shadow-lg transition-all text-center overflow-hidden"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 text-white rounded-full mb-4">
-                    {member.icon}
+                  <div className="w-32 h-40 md:w-48 md:h-56 mx-auto mb-4 rounded-lg overflow-hidden border-2 border-primary-100 shadow-md">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-"
+                    />
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
                     {member.name}

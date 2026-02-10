@@ -5,12 +5,24 @@ const ContactPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
+    name: "Contact GS Agritech",
+    url: "https://www.gsagritech.com/contact",
     mainEntity: {
       "@type": "Organization",
       name: "GS Agritech",
+      url: "https://www.gsagritech.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Indapur-Akluj Road, Shivajinagar",
+        addressLocality: "Indapur",
+        addressRegion: "Maharashtra",
+        addressCountry: "IN",
+      },
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "Sales",
+        email: "info@gsagritech.com",
+        telephone: "+91-9970849999",
         areaServed: "Worldwide",
         availableLanguage: "English",
       },
